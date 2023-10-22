@@ -1,0 +1,23 @@
+<?php
+class Person {
+    public $firstName;
+    public $lastName;
+    public $age;
+
+    public function __construct($firstName, $lastName, $age){
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->age = $age;
+    }
+
+    public function displayInfo() {
+        echo "Name:" . $this->firstName , " " , $this->lastName , "\n";
+        echo "Age:" . $this->age , "years old\n"; 
+        }
+}
+$person1 = new Person("Sejal", "Patil", 19);
+$person1->displayInfo();
+
+$person2 = new Person("Sau", "Dahake", 20);
+$person2->displayInfo();
+?>

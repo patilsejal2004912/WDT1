@@ -1,0 +1,9 @@
+<?php
+$cars=array("Thar","BMW","RRR");
+print_r($cars);
+echo"<br>We purchase $cars[0] car.<br>";
+$cars[]="abc";
+print_r($cars);
+echo"<br>";
+$age=array("seju"=>17,"sau"=>18,"komdii"=>19);
+print_r($age);

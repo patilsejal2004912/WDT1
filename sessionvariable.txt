@@ -1,0 +1,13 @@
+<?php
+session_start();
+$_SESSION['username'] = "Sejal_patil";
+$_SESSION['email'] = "sejalpatil129@gmail.com";
+echo "Welcom," . $_SESSION['username'] . "<br>";
+echo "Your email is: " . $_SESSION['email'] . "<br>";
+$_SESSION['email'] = 'new_email@example.com';
+echo "Updated email:" . $_SESSION['email'] . "<br>";
+unset($_SESSION['email']);
+echo "Email unset:" . isset($_SESSION['email']) ?"Email is set." : "Email is not set";
+session_destroy();
+echo "Session destroyed.";
+?>

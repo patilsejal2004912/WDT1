@@ -1,0 +1,17 @@
+<?php
+function calculatefactorial($number){
+    if ($number ==0){
+        return 1;
+    }else{
+        $factorial = 1;
+        for ($i =1; $i <= $number; $i++){
+            $factorial = $factorial * $i;
+        }
+        return $factorial;
+    }
+}
+$number = 7;
+$result = calculatefactorial($number);
+
+echo "The Factorial of $number is $result";
+?>

@@ -1,0 +1,11 @@
+practical1 passing varibles through a URL
+
+<h1>Test Page</h1>
+<?php
+echo $_GET['studentId'];
+?>
+
+<a href="prac21.php?varibleName='Valueofvariable'">Click Me</a>
+<a href="prac21.php?userId">User</a>
+<a href="prac21.php?studentId=27">student</a>
+
